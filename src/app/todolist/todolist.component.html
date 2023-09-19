@@ -1,0 +1,58 @@
+<section class="vh-100" style="background-color: hsl(69, 100%, 87%);">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-200">
+        <div class="col col-xl-10">
+  
+          <div class="card" style="border-radius: 15px;  border-width: 4px; border-color: #ffdd00; background-color: #e5eef3; height: 300px;">
+           
+            <div class="container">
+                <h1>Add Today Tasks</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" [(ngModel)] = "newTask"  placeholder = "Eg: Walk hour at night" >
+                    <div class="input-group-append">
+                        <button class="btn btn-primary"  style="background-color: #30c2cc;"     (click)="addTask()">Add</button>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let task of tasks;  let i = index">
+                        {{ task }}
+                        &nbsp; &nbsp;<button class="btn btn-danger btn-sm float-right" (click)="removeTask(i)">Remove</button>
+                    </li>
+                </ul>
+            </div>
+          
+              
+          </div>
+        </div>
+        <img src="assets\morning-routine.webp" style="height: 400px; width: 500px; align-items: center;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
